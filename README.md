@@ -28,6 +28,11 @@ OR
 ```bash
 pip3 install -r requirements.txt
 ```
+For more information about these libraries see their docs:
+
+- [Adafruit DHT Sensors](https://github.com/adafruit/Adafruit_Python_DHT)
+
+- [Influx-Py](https://github.com/influxdata/influxdb-python)
 
 ## Setting Up Influx and Grafana
 For convenience, we are using Docker. You can simply use the provided `docker-compose.yml` file or issue the following commands steps:
@@ -59,6 +64,11 @@ You can use the instructions at the Medium Blog post location [here]().
 
 ## Running the Script
 Once you have completed all steps above, please fill in the `settings.conf` and put it in the same directory as the script. 
+
+Execute in the background:
+```bash 
+sudo python3 sensor-config.py &
+```
 
 ## Tests
 You may use the following scripts as tests to ensure each indvidual components work as expected.
