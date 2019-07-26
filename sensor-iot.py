@@ -60,7 +60,6 @@ def post_alert(config, trigger, value):
     # IFTTT Webhook Info
     ifttt_url = "https://maker.ifttt.com/trigger/{}/with/key/"
     ifttt_key = config['alerting_settings']['ifttt_key']
-    threshold_count = config['alerting_settings']['threshold_count']
 
     # 'value' will be sent to IFTTT and can be included in alert
     data = {"value1": value}
