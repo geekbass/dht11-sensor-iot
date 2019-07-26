@@ -69,7 +69,7 @@ Once you have completed all steps above, please fill in the `settings.conf` and 
 
 Execute in the background:
 ```bash 
-sudo python3 sensor-config.py &
+sudo python3 sensor-iot.py &
 ```
 
 If there are any errors, the script will exit. As mentioned currently there is not error handling.
