@@ -1,0 +1,26 @@
+influxdb:
+  image: influxdb:latest
+  container_name: influxdb
+  ports:
+    - "8083:8083"
+    - "8086:8086"
+  environment:
+    - INFLUXDB_ADMIN_ENABLED=true
+    - INFLUXDB_USER=telegraf
+    - INFLUXDB_USER_PASSWORD=secretpassword
+  volumes:
+    - "influxdb:/var/lib/influxdb"
+  restart: always
+
+grafana:
+  image: grafana/grafana:latest
+  container_name: grafana
+  ports:
+    - "3000:3000"
+  environment:
+    - 
+  links:
+    - influxdb
+  volumes:
+    - "grafana:/var/lib/grafana"
+
