@@ -61,7 +61,7 @@ Login into Grafana and setup your connection with the following:
 ## Setting up IFTTT
 This project uses IFTTT Web hooks to alert you based on the `temperature_threshold_low` and `temperature_threshold_high` values in your `settings.conf` file. You will need to create your own applet based on what kind of alert you would like to receive. Please see the [IFTTT](https://ifttt.com) site for more information.
 
-You can use the instructions at the Medium Blog post location [here]().
+You can use the instructions at the Medium Blog post location [here](https://medium.com/@wbassler23/monitoring-room-temperature-for-your-brew-with-pi-influxdb-grafana-and-ifttt-81b33268450b).
 
 
 ## Running the Script
