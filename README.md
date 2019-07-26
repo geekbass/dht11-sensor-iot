@@ -46,6 +46,13 @@ sudo docker volume create grafana
 sudo docker run -d --link influxdb --name grafana -v grafana:/var/lib/grafana -p 3000:3000 grafana/grafana
 ```
 
+OR via compose:
+```bash
+sudo docker volume create influxdb
+sudo docker volume create grafana
+docker-compose up -d
+```
+
 Create the DB using the following:
 ```bash
 curl -i -XPOST http://influx:8086/query --data-urlencode "q=CREATE DATABASE sensor_data"
@@ -69,6 +76,8 @@ Execute in the background:
 ```bash 
 sudo python3 sensor-config.py &
 ```
+
+If there are any errors, the script will exit. As mentioned currently there is not error handling.
 
 ## Tests
 You may use the following scripts as tests to ensure each indvidual components work as expected.
