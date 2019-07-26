@@ -17,17 +17,12 @@ There are far too many resources available online to explain or discuss Raspberr
 As good reference for Raspberry Pi and DHT11 setup, please see this [doc](http://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-the-raspberry-pi/).
 
 ## Setting up Python
-We will be using a few Libraries that need installed either via `pip` or via `requirements.txt` file. `requirements.txt` file  has more than needed as it was dumped directly from Pi. Run these steps from your Pi to prepare Python.
+We will be using a few Libraries that need installed either via `pip`. Run from your Pi to prepare Python.
 
 ```bash
 pip3 install -y requests Adafruit_DHT influxdb
 ```
 
-OR
-
-```bash
-pip3 install -r requirements.txt
-```
 For more information about these libraries see their docs:
 
 - [Adafruit DHT Sensors](https://github.com/adafruit/Adafruit_Python_DHT)
